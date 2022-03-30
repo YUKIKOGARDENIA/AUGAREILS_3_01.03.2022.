@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+.loading {
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 1000;
+  margin-top: 0;
+  margin-left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-animation-name: hidden;
+          animation-name: hidden;
+  -webkit-animation-duration: 0s;
+          animation-duration: 0s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes hidden {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes hidden {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+.loading-inner {
+  text-align: center;
+}
+.loading-inner img {
+  width: 200px;
+  height: 200px;
+  -webkit-animation: loading 1s infinite;
+          animation: loading 1s infinite;
+}
+.loading-inner p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #9356DC;
+}
+.loading-inner span {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.loading-inner span::before {
+  content: "";
+  background-color: white;
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  -webkit-animation: text_loading 1.5s infinite;
+          animation: text_loading 1.5s infinite;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+  25% {
+    transform: scale(1, 0.9) translate3d(-2%, -2%, 0) skew(5deg);
+  }
+  50% {
+    transform: scale(1, 1) translate3d(-1%, -1%, 0) skew(1deg);
+  }
+  75% {
+    transform: scale(1, 0.9) translate3d(2%, 2%, 0) skew(-5deg);
+  }
+  100% {
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+}
+
+@keyframes loading {
+  0% {
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+  25% {
+    transform: scale(1, 0.9) translate3d(-2%, -2%, 0) skew(5deg);
+  }
+  50% {
+    transform: scale(1, 1) translate3d(-1%, -1%, 0) skew(1deg);
+  }
+  75% {
+    transform: scale(1, 0.9) translate3d(2%, 2%, 0) skew(-5deg);
+  }
+  100% {
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes text_loading {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@keyframes text_loading {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}/*# sourceMappingURL=styleloading.css.map */
