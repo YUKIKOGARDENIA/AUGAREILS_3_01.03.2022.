@@ -361,5 +361,5 @@ footer a {
 .footer__nav .prop__icon img {
   width: 35px;
   height: 35px;
-  filter: invert 1;
+  filter: invert(1);
 }/*# sourceMappingURL=stylemenu.css.map */
