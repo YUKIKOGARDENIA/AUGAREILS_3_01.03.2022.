@@ -168,9 +168,7 @@ body a {
 
 .entree__text, .plat__text, .dessert__text {
   overflow: hidden;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  width: 50%;
 }
 
 .entree__text__titre, .plat__text__titre, .dessert__text__titre {
