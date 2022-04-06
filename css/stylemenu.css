@@ -164,6 +164,9 @@ body a {
   display: flex;
   flex-direction: column;
   padding-left: 15px;
+}
+
+.entree__text, .plat__text, .dessert__text {
   overflow: hidden;
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -181,7 +184,7 @@ body a {
   text-overflow: ellipsis;
 }
 
-.entree__text__explication p, .plat__text__explication p, .desssert__text__explication p {
+.entree__text__explication p, .plat__text__explication p, .dessert__text__explication p {
   filter: invert(50%);
   overflow: hidden;
   white-space: nowrap;
