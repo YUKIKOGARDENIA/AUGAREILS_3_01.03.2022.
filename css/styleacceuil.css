@@ -221,6 +221,7 @@ a p {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  overflow: hidden;
 }
 .restaurants__text svg {
   stroke-width: 20px;
@@ -240,11 +241,14 @@ a p {
 }
 .restaurants__text__commentaire > h3 {
   font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .restaurants__titre {
-  width: 100%;
-  margin-left: 80px;
+  width: 90%;
+  margin-left: 5%;
   padding: top 35px;
 }
 

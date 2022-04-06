@@ -102,15 +102,30 @@ body a {
   font-size: xxx-large;
 }
 
+.menu__title__icon svg {
+  stroke-width: 20px;
+  stroke: rgb(211, 209, 209);
+  width: 30px;
+  height: 30px;
+  fill-opacity: 0;
+  transition: all 0.5s;
+}
+
+.menu__title__icon svg:hover {
+  fill-opacity: 1;
+  transition: all 2s;
+}
+
 .menu__title__icon {
   width: 45px;
   height: 45px;
   text-align: center;
-}
-.menu__title__icon img {
-  width: 40px;
-  height: 40px;
-  filter: invert(50%);
+  /*& img {
+      width: 40px;
+      height: 40px;
+      filter: invert(50%);
+
+  }*/
 }
 
 .menu__entree, .menu__plat, .menu__dessert {
@@ -135,7 +150,7 @@ body a {
   overflow: hidden;
   background-color: white;
   width: 90%;
-  height: 140px;
+  height: 170px;
   border-radius: 25px;
   margin: 0 auto;
   padding-left: 20px;
@@ -149,6 +164,10 @@ body a {
   display: flex;
   flex-direction: column;
   padding-left: 15px;
+  overflow: hidden;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .entree__text__titre, .plat__text__titre, .dessert__text__titre {
@@ -156,8 +175,17 @@ body a {
   margin: 24px 0 24px 0;
 }
 
+.entree__text__titre p, .plat__text__titre p, .dessert__text__titre p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 .entree__text__explication p, .plat__text__explication p, .desssert__text__explication p {
   filter: invert(50%);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .entree__prix, .plat__prix, .dessert__prix {
@@ -225,7 +253,7 @@ a:hover .dessert__prix {
 
 a:hover .animation .cercle {
   transform: rotate(350deg);
-  transition: all 0.2s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .entree__prix p, .plat__prix p, .dessert__prix p {
@@ -256,7 +284,7 @@ a:hover .animation .cercle {
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
   transform: rotate 0deg;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .animation .cercle span {
   width: 25px;
