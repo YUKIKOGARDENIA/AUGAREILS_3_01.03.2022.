@@ -166,9 +166,15 @@ body a {
   padding-left: 15px;
 }
 
+@media screen and (max-width: 350px) {
+  .entree__text, .plat__text, .dessert__text {
+    overflow: hidden;
+    width: 30%;
+  }
+}
 .entree__text, .plat__text, .dessert__text {
   overflow: hidden;
-  width: 50%;
+  width: 40%;
 }
 
 .entree__text__titre, .plat__text__titre, .dessert__text__titre {
