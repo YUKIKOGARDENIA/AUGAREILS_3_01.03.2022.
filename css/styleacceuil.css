@@ -23,8 +23,8 @@ body {
 .header__map__icon img {
   width: 25px;
   height: 25px;
-  margin-left: -70px;
 }
+
 .header__map p {
   margin-left: 45px;
 }
@@ -32,8 +32,16 @@ body {
 a {
   text-decoration: none;
 }
+
 a p {
   color: white;
+}
+
+.searchBox {
+  background-color: #cecccc;
+  outline: none;
+  border: 2px solid #cecccc;
+  font-size: 15px;
 }
 
 .header__intro {
@@ -192,7 +200,7 @@ a p {
   line-height: 35px;
   position: absolute;
   margin-bottom: 300px;
-  left: 63%;
+  left: 55%;
 }
 
 .restaurants__icon {
@@ -224,16 +232,16 @@ a p {
   overflow: hidden;
 }
 .restaurants__text svg {
-  stroke-width: 20px;
-  stroke: #d3d1d1;
-  width: 30px;
-  height: 30px;
-  fill-opacity: 0;
-  transition: all 0.5s;
+   stroke-width: 20px;
+   stroke: #d3d1d1;
+   width: 30px;
+   height: 30px;
+   fill-opacity: 0;
+   transition:all 0.5s;
 }
 .restaurants__text svg:hover {
-  fill-opacity: 1;
-  transition: all 2s;
+   fill-opacity: 1;
+   transition:all 2s;
 }
 .restaurants__text__commentaire {
   width: 50%;
@@ -241,17 +249,15 @@ a p {
 }
 .restaurants__text__commentaire > h3 {
   font-weight: bold;
-  overflow: hidden;
   white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
-
 .restaurants__titre {
   width: 90%;
   margin-left: 5%;
   padding: top 35px;
 }
-
 footer {
   background-color: black;
   display: flex;
@@ -259,45 +265,37 @@ footer {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-
 footer a {
   text-decoration: none;
 }
-
 .footer__logo {
   display: flex;
   width: 45%;
   height: 80px;
   padding-left: 50px;
 }
-
 .footer__logo img {
   width: 60%;
   height: 35px;
   filter: invert(1);
 }
-
 .footer__nav {
   display: flex;
   align-items: center;
   padding-left: 50px;
 }
-
 .footer__nav.prop__text {
   padding-left: 15px;
   font-size: x-large;
   font-weight: bold;
 }
-
 .footer__nav p {
   font-size: x-large;
   color: white;
 }
-
-.footer__nav .mention-legale, .footer__nav .contact {
+.footer__nav .mention-legale, .restaurants__text .footer__nav .contact {
   font-size: x-large;
 }
-
 .footer__nav .prop__icon img {
   width: 35px;
   height: 35px;
